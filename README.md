@@ -118,7 +118,8 @@ This project provides a REST API to retrieve and manage a dataset of songs. You 
       }'
 
 
-### 3. Possible Improvements:
+## Scalability & Improvements
+
 - **Caching**: Use Redis or Memcached to cache song data, reducing the load on the database.
 - **Task Queues**: Use Celery for background processing, like calculating average ratings or batch data imports.
 - **Database Optimization**: Add indexing to fields like song title or artist to optimize search queries.
