@@ -15,17 +15,14 @@ db.init_app(app)
 migrate = Migrate(app, db)
 
 with app.app_context():
-    db.create_all()  # Create database tables
-    load_data_to_db('songs.json')  # Load JSON data into the database
+    db.create_all()
+    load_data_to_db('songs.json')
 
-# Create instance of SongRepository
 song_repo = SongRepository()
 
-# Pass the repository instance to SongService
 song_service = SongService(song_repo)
 
-# Pass song_service to create_song_routes
-create_song_routes(app, song_service)  # Pass the song_service instance here
+create_song_routes(app, song_service)
 
 if __name__ == '__main__':
     app.run(debug=True)
