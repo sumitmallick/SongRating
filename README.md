@@ -34,9 +34,11 @@ This project provides a REST API to retrieve and manage a dataset of songs. You 
    python app.py --debug # in case want to debug
 
 ## Testing
-   To run tests, using pytest:
-   ```bash
-   pytest test_apis.py
+To run tests, using pytest:
+   run this:
+      ```bash
+      pytest test_apis.py
+
 
 ## API Documentation
 
